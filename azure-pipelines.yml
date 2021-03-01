@@ -18,18 +18,18 @@ stages:
   #         - task: Npm@1
   #           inputs:
   #             command: 'install'
-  #             workingDir: '/tasks/gitbumper' 
+  #             workingDir: './tasks/gitbumper' 
   #         - task: Bash@3
   #           displayName: Compile Javascript
   #           inputs:
   #             targetType: "inline"
   #             script: |
-  #               cd /tasks/gitbumper
+  #               cd ./tasks/gitbumper
   #               tsc
   #         - task: Npm@1
   #           inputs:
   #             command: 'custom'
-  #             workingDir: '/tasks/gitbumper/tests' 
+  #             workingDir: './tasks/gitbumper/tests' 
   #             customCommand: 'testScript' # See the definition in the explanation section below - it may be called test
   #         - task: PublishTestResults@2
   #           inputs:
@@ -54,7 +54,7 @@ stages:
             inputs:
               targetType: "inline"
               script: |
-                cd /tasks/gitbumper
+                cd ./tasks/gitbumper
                 tsc
           - task: QueryAzureDevOpsExtensionVersion@3
             inputs:
