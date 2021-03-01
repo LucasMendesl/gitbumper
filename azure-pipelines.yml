@@ -42,6 +42,9 @@ stages:
           - task: TfxInstaller@3
             inputs:
               version: "v0.7.x"
+          
+          - script: ls
+          
           - task: Npm@1
             inputs:
               command: 'install'
