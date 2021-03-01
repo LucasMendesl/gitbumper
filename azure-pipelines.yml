@@ -48,7 +48,7 @@ stages:
           - task: Npm@1
             inputs:
               command: 'install'
-              workingDir: '/tasks/gitbumper'
+              workingDir: './tasks/gitbumper'
           - task: Bash@3
             displayName: Compile Javascript
             inputs:
