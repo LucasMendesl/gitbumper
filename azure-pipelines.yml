@@ -103,7 +103,7 @@ stages:
               connectTo: 'VsTeam'
               connectedServiceName: 'Marketplace' 
               fileType: 'vsix'
-              vsixFile: '/Publisher.*.vsix'
+              vsixFile: '/devopsnights.*.vsix'
               publisherId: '$(PublisherID)'
               extensionId: '$(ExtensionID)'
               extensionName: '$(ExtensionName)'
