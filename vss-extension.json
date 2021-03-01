@@ -3,7 +3,7 @@
     "id": "git-deployment-tools",
     "name": "Git bumper",
     "version": "0.0.1",
-    "publisher": "wesleycamargo",
+    "publisher": "devopsnights",
     "targets": [
         {
             "id": "Microsoft.VisualStudio.Services"
