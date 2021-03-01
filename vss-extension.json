@@ -1,0 +1,36 @@
+{
+    "manifestVersion": 1,
+    "id": "git-deployment-tools",
+    "name": "Git bumper",
+    "version": "0.0.1",
+    "publisher": "wesleycamargo",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],    
+    "description": "Tools for manage git deployments. Includes git bumper task.",
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "icons": {
+        "default": "images/git-icon.png"
+    },
+    "files": [
+        {
+            "path": "tasks/gitbumper"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "custom-build-release-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "tasks/gitbumper"
+            }
+        }
+    ]
+}
